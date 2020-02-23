@@ -17,6 +17,7 @@ header {
   padding: 28px 36px;
   background: #2d303a;
   color: #f2f2f2;
+  border-bottom: 7px solid #313745;
 }
 
 header li {
@@ -52,12 +53,13 @@ nav {
   display: flex;
   height: 600px;
   padding-top: 52px;
-  justify-content: space-evenly;
   background: #f06c64;
+  border-bottom: 7px solid #ea676c;
 }
 
 .img-horizontal {
-  transform: rotate(90deg);
+  margin-left: 7%;
+  margin-top: 96px
 }
 
 nav a {
@@ -81,6 +83,7 @@ nav a:active {
   text-align: left;
   color: #666d89;
   background: #f2f2f2;
+  border-bottom: 7px solid #fff;
 }
 
 .services-block h2 {
