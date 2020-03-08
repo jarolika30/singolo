@@ -32,6 +32,14 @@ footer {
   padding: 60px 40px 47px 40px;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40px;
+  background: #2d303a;
+}
+
 h1 {
   margin-bottom: 30px;
   font-size: 30px;
@@ -154,7 +162,6 @@ h1 {
 
 .social {
   display: flex;
-  margin-top: 22px;
 }
 
 .social a {
@@ -176,4 +183,11 @@ h1 {
 .social a:hover {
   background-color: #66cca8;
   border-color: #4ab48f;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 400;
 }
