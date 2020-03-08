@@ -6,10 +6,34 @@
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+section, 
+footer {
+  padding: 60px 40px 47px 40px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
 .all {
   max-width: 1020px;
   margin: auto;
   background-color: #f06c64;
+}
+
+.quote p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
 }
 
 .social {

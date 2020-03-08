@@ -10,7 +10,7 @@
 <body>
   <div class="all">
     <main>
-      <section class="">
+      <section class="quote">
         <h1>Get a Quote</h1>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen. Duis mollis, non
           commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
@@ -18,8 +18,11 @@
       </section>
       <section class="">
         <div class="form">
-          <form name="">
-
+          <form name="" action="#" method="post">
+            <input type="text" name="name" placeholder="Name (Required)" required><br>
+            <input type="email" name="email" placeholder="Email (Required)" required><br>
+            <input type="text" name="subject" placeholder="Subject"><br>
+            <textarea name="msg" placeholder="Describe your object in detail..."></textarea><br>
           </form>
         </div>
         <div class="text">
