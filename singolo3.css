@@ -6,16 +6,12 @@
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
-@-webkit-keyframes autofill {
-  to {
-    color: #f48c8f;;
-    background: #d6564f;;
-  }
+button:active, button:focus {
+  outline: none;
 }
- 
-input:-webkit-autofill {
-  -webkit-animation-name: autofill;
-  -webkit-animation-fill-mode: both;
+
+button::-moz-focus-inner {
+  border: 0;
 }
 
 input:active,
@@ -76,6 +72,7 @@ h1 {
   display: flex;
   margin-bottom: 4px;
   padding-top: 0;
+  padding-bottom: 22px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -114,6 +111,33 @@ h1 {
   padding-left: 13px;
   box-sizing: border-box;
   resize: none;
+}
+
+.form input:required:valid {
+  background: #bf473f;
+}
+
+.btn-submit {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #d3524c;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: #f48c8f;
+  background-color: #d6564f;
+  transition: all 0.3s ease-out;
+}
+
+button:hover,
+button:focus,
+button:active {
+  border: 1px solid #f0d8d9;
+  cursor: pointer;
+}
+
+button:active {
+  color: #ffffff;
 }
 
 .form input {
@@ -172,6 +196,12 @@ h1 {
   background-image: url("assets/img/email.svg");
 }
 
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
 .social {
   display: flex;
   margin-top: 20px;
@@ -186,6 +216,7 @@ h1 {
   text-align: center;
   border: 1px solid #666d89;
   border-radius: 100%;
+  transition: all 0.3s ease-out;
 }
 
 .social .icon {
