@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.all {
+  max-width: 1020px;
+  margin: auto;
+  background-color: #f06c64;
+}
+
+.social {
+  display: flex;
+  margin-top: 22px;
+}
+
+.social a {
+  display: flex;
+  height: 30px;
+  width: 32px;
+  margin-right: 10px;
+  padding-top: 6px;
+  text-align: center;
+  border: 1px solid #666d89;
+  border-radius: 100%;
+}
+
+.social .icon {
+  height: 15px;
+  margin: 0 auto;
+}
+
+.social a:hover {
+  background-color: #66cca8;
+  border-color: #4ab48f;
+}
