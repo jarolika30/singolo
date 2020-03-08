@@ -6,6 +6,27 @@
   font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+@-webkit-keyframes autofill {
+  to {
+    color: #f48c8f;;
+    background: #d6564f;;
+  }
+}
+ 
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+input:active,
+input:hover,
+input:focus,
+textarea:active,
+textarea:hover,
+textarea:focus {
+  outline: none;
+}
+
 section, 
 footer {
   padding: 60px 40px 47px 40px;
@@ -34,6 +55,101 @@ h1 {
   font-family: "Lato";
   font-weight: 300;
   text-align: left;
+}
+
+.contact-us {
+  display: flex;
+  padding-top: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-us h2 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.contact-us p, 
+.contact-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+}
+
+.text {
+  width: 300px;
+}
+ 
+.contacts {
+  margin-top: 40px;
+}
+
+.form textarea {
+  height: 202px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.form input {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.form input,
+.form textarea {
+  width: 619px;
+  margin-bottom: 10px;
+  color: #f48c8f;
+  border: 1px solid #d3524c;
+  border-radius: 5px;
+  background-color: #d6564f;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.picture {
+  display: inline-block;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.location {
+  width: 7px;
+  height: 11px;
+  background-image: url("assets/img/location.svg");
+}
+
+.handy {
+  width: 11px;
+  height: 11px;
+  background-image: url("assets/img/handy.svg");
+}
+
+.mail {
+  width: 13px;
+  height: 11px;
+  background-image: url("assets/img/email.svg");
 }
 
 .social {
